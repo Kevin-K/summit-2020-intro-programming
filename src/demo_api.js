@@ -22,7 +22,7 @@ export function setBackground(color) {
 }
 let i = 0;
 export function addPuppy(name, podcast, age) {
-  const puppyId = i++ % 8;
+  const puppyId = i++ % 9;
   const puppyPicture = `./images/puppy-${puppyId}.jpg`;
 
   const puppy = document.createElement("div");
@@ -60,7 +60,7 @@ function addLogo() {
 
 export function theGrandFinale() {
   for (i = 0; i < 60; i++) {
-    const puppyId = (i) % 4 + 4; // mf dogs are from 4-7
+    const puppyId = (i) % 5 + 4; // mf dogs are from 4-8
     $("body").raptorize({
       image: `./images/puppy-${puppyId}.jpg`,
       id: `dog-output-${i}`,
